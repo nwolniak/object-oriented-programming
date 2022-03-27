@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Classes.Controller">
+    <left>
+        <Pane fx:id="firstWorld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </Pane>
+    </left>
+    <bottom>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1440.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0">
+                    <children>
+                        <Button fx:id="resetFirstButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#resetFirst" prefHeight="30.0" text="Restart">
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="startFirstButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startFirst" prefHeight="30.0" text="Start" />
+                        <Button fx:id="stopFirstButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stopFirst" prefHeight="30.0" text="Stop" />
+                        <Button fx:id="stepFirstButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stepFirst" prefHeight="30.0" text="Step" />
+                        <Button fx:id="firstDominantAnimals" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showFirstAnimalsWithDominantGenes" prefHeight="30.0" text="AnimalsWithDominantGenes" />
+                        <Button fx:id="firstWriteToFile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#firstStatisticsWriteToFile" prefHeight="30.0" text="WriteToFile" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0">
+                    <children>
+                        <Button fx:id="resetSecondButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#resetSecond" prefHeight="30.0" text="Restart" />
+                        <Button fx:id="startSecondButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startSecond" prefHeight="30.0" text="Start" />
+                        <Button fx:id="stopSecondButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stopSecond" prefHeight="30.0" text="Stop" />
+                        <Button fx:id="stepSecondButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stepSecond" prefHeight="30.0" text="Step">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="secondDominantAnimals" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showSecondAnimalsWithDominantGenes" prefHeight="30.0" text="AnimalsWithDominantGenes">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="secondWriteToFile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#secondStatisticsWriteToFile" prefHeight="30.0" text="WriteToFile">
+                            <HBox.margin>
+                                <Insets right="50.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+    </bottom>
+    <right>
+        <Pane fx:id="secondWorld" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </Pane>
+    </right>
+    <top>
+        <Pane prefHeight="325.0" prefWidth="1440.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="firstAvgLife" editable="false" layoutX="150.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </TextField>
+                <TextField fx:id="firstAvgEnergy" editable="false" layoutX="150.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </TextField>
+                <TextField fx:id="firstPlantsSize" editable="false" layoutX="150.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" />
+                <TextField fx:id="firstAnimalsSize" editable="false" layoutX="150.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" />
+                <TextField fx:id="firstAvgChildren" editable="false" layoutX="150.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" />
+                <Label layoutX="50.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Animals :" textAlignment="CENTER" />
+                <Label layoutX="50.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Plants :" textAlignment="CENTER" />
+                <Label layoutX="50.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Avg energy :" textAlignment="CENTER" />
+                <Label layoutX="50.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Avg life time :" textAlignment="CENTER" />
+                <Label layoutX="50.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Avg children :" textAlignment="CENTER" />
+                <Label layoutX="50.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Genes :" />
+                <TextField fx:id="firstDominantGenes" editable="false" layoutX="150.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="500.0" />
+                <Label layoutX="800.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Animals :" />
+                <Label layoutX="800.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Plants :" />
+                <Label layoutX="800.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Avg life time :" />
+                <Label layoutX="800.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Avg energy :" />
+                <Label layoutX="800.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Genes :" />
+                <Label layoutX="800.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Avg children :" />
+                <TextField fx:id="secondAnimalsSize" editable="false" layoutX="900.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                <TextField fx:id="secondPlantsSize" editable="false" layoutX="900.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                <TextField fx:id="secondAvgLife" editable="false" layoutX="900.0" layoutY="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                <TextField fx:id="secondAvgEnergy" editable="false" layoutX="900.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                <TextField fx:id="secondDominantGenes" editable="false" layoutX="900.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="500.0" />
+                <TextField fx:id="secondAvgChildren" editable="false" layoutX="900.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                <TextField fx:id="firstWorldAnimalGenotypes" editable="false" layoutX="140.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="530.0" />
+                <Label layoutX="10.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Animal genotypes" />
+                <Label layoutX="10.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Animal following" />
+                <TextField fx:id="firstAnimalFollowing" editable="false" layoutX="140.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="530.0" />
+                <Label layoutX="730.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Animal genotypes" />
+                <Label layoutX="730.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" text="Animal following" />
+                <TextField fx:id="secondWorldAnimalGenotypes" editable="false" layoutX="850.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="530.0" />
+                <TextField fx:id="secondAnimalFollowing" editable="false" layoutX="850.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="530.0" />
+            </children>
+        </Pane>
+    </top>
+</BorderPane>
